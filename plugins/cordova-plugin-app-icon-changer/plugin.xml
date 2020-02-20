@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin
+    id="cordova-plugin-app-icon-changer"
+    version="2.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+
+  <name>App Icon Changer</name>
+
+  <author>Eddy Verbruggen/Adam De Lay</author>
+
+  <description>Change the homescreen icon of your app from code.</description>
+
+  <keywords>Icon Changer, Home icon, icon</keywords>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.5.0"/>
+  </engines>
+
+  <dependency id="cordova-custom-config" version=">=5.1.0" />
+
+  <js-module name="AppIconChanger" src="www/AppIconChanger.js">
+    <clobbers target="AppIconChanger"/>
+  </js-module>
+
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="AppIconChanger">
+        <param name="ios-package" value="AppIconChanger"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/AppIconChanger.h"/>
+    <source-file src="src/ios/AppIconChanger.m"/>
+  </platform>
+
+  <!-- android -->
+  <platform name="android">
+      <config-file target="config.xml" parent="/*">
+          <feature name="AppIconChanger">
+              <param name="android-package" value="org.apache.cordova.appiconchanger.AppIconChanger" onload="true" />
+          </feature>
+      </config-file>
+
+      <source-file src="src/android/AppIconChanger.java" target-dir="src/org/apache/cordova/appiconchanger" />
+      <source-file src="src/android/AppIconNameChanger.java" target-dir="src/org/apache/cordova/appiconchanger" />
+
+      <resource-file src="src/android/res/layout/appiconchanger.xml" target="res/layout/appiconchanger.xml" />
+  </platform>
+</plugin>

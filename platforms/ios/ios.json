@@ -1,0 +1,63 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "*-Info.plist": {
+        "parents": {
+          "CFBundleIcons": [
+            {
+              "xml": "<dict><key>CFBundleAlternateIcons</key><dict><key>fc_icon_default</key><dict><key>CFBundleIconFiles</key><array><string>AppIcon.appiconset</string></array></dict><key>icon_phonegap</key><dict><key>UIPrerenderedIcon</key><true /><key>CFBundleIconFiles</key><array><string>icon_phonegap</string></array></dict></dict></dict>",
+              "count": 2
+            }
+          ],
+          "CFBundleIcons~ipad": [
+            {
+              "xml": "<dict><key>CFBundleAlternateIcons</key><dict><key>fc_icon_default</key><dict><key>CFBundleIconFiles</key><array><string>AppIcon.appiconset</string></array></dict><key>icon_phonegap</key><dict><key>UIPrerenderedIcon</key><true /><key>CFBundleIconFiles</key><array><string>icon_phonegap</string></array></dict></dict></dict>",
+              "count": 2
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"AppIconChanger\"><param name=\"ios-package\" value=\"AppIconChanger\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-app-icon-changer": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-app-icon-changer.AppIconChanger",
+      "file": "plugins/cordova-plugin-app-icon-changer/www/AppIconChanger.js",
+      "pluginId": "cordova-plugin-app-icon-changer",
+      "clobbers": [
+        "AppIconChanger"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-custom-config": "5.1.0",
+    "cordova-plugin-app-icon-changer": "2.0.0",
+    "cordova-plugin-whitelist": "1.3.3"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "_from": "git+https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
+  "_id": "cordova-plugin-app-icon-changer@2.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-app-icon-changer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
+    "rawSpec": "https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
+    "saveSpec": "git+https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
+    "fetchSpec": "https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git#df4e1bc88a7a46e9e7c062039b8aa4748410fdf2",
+  "_spec": "https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
+  "_where": "/Apps/testApp",
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com",
+    "url": "https://github.com/EddyVerbruggen"
+  },
+  "bugs": {
+    "url": "https://github.com/kd8ssq/cordova-plugin-app-icon-changer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-app-icon-changer",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Change the homescreen icon of your app from code.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.5.0"
+    }
+  ],
+  "homepage": "https://github.com/kd8ssq/cordova-plugin-app-icon-changer#readme",
+  "keywords": [
+    "Icon Changer",
+    "Home icon",
+    "icon",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-app-icon-changer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git"
+  },
+  "version": "2.0.0"
+}

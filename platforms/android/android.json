@@ -1,0 +1,93 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application/activity[@android:name='MainActivity']": [
+            {
+              "xml": "<activity android:launchMode=\"singleTop\" android:name=\"MainActivity\" />",
+              "count": 1,
+              "mode": "overwrite",
+              "id": "config.xml",
+              "oldAttrib": {
+                "android:launchMode": "singleTop",
+                "android:name": "MainActivity"
+              }
+            }
+          ],
+          "application": [
+            {
+              "xml": "<activity-alias android:configChanges=\"orientation|screenSize\" android:enabled=\"false\" android:icon=\"@drawable/icon_phonegap\" android:label=\"@string/app_name\" android:name=\"org.apache.cordova.appiconchanger.MainActivity__icon_phonegap\" android:noHistory=\"true\" android:targetActivity=\"MainActivity\"><intent-filter><action android:name=\"android.intent.action.MAIN\" /><category android:name=\"android.intent.category.LAUNCHER\" /></intent-filter></activity-alias>",
+              "count": 2
+            },
+            {
+              "xml": "<activity-alias android:configChanges=\"orientation|screenSize\" android:enabled=\"true\" android:icon=\"@mipmap/ic_launcher\" android:label=\"@string/app_name\" android:name=\"org.apache.cordova.appiconchanger.MainActivity__fc_icon_default\" android:noHistory=\"true\" android:targetActivity=\"MainActivity\"><intent-filter><action android:name=\"android.intent.action.MAIN\" /><category android:name=\"android.intent.category.LAUNCHER\" /></intent-filter></activity-alias>",
+              "count": 2
+            }
+          ]
+        }
+      },
+      "res/values/strings.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<string name=\"default_icon_id\">fc_icon_default</string>",
+              "count": 2
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"AppIconChanger\"><param name=\"android-package\" onload=\"true\" value=\"org.apache.cordova.appiconchanger.AppIconChanger\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-app-icon-changer": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-app-icon-changer.AppIconChanger",
+      "file": "plugins/cordova-plugin-app-icon-changer/www/AppIconChanger.js",
+      "pluginId": "cordova-plugin-app-icon-changer",
+      "clobbers": [
+        "AppIconChanger"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-custom-config": "5.1.0",
+    "cordova-plugin-app-icon-changer": "2.0.0",
+    "cordova-plugin-whitelist": "1.3.3"
+  }
+}
