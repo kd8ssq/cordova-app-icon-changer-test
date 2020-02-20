@@ -10,9 +10,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-android": "^8.1.0",
     "cordova-custom-config": "^5.1.0",
-    "cordova-ios": "^5.1.1",
     "cordova-plugin-app-icon-changer": "git+https://github.com/kd8ssq/cordova-plugin-app-icon-changer.git",
     "cordova-plugin-whitelist": "^1.3.3",
     "lodash": "^4.17.11"
@@ -22,10 +20,7 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-app-icon-changer": {}
     },
-    "platforms": [
-      "ios",
-      "android"
-    ]
+    "platforms": []
   },
   "devDependencies": {}
 }
