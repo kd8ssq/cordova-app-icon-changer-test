@@ -1,4 +1,4 @@
 # cordova-app-icon-changer-test
 Show the basic functionality of the Cordova App Icon Changer
 
-Add your platforms and then build the platform to test
+Download the test app and then add and build your platforms to test.  Written for iOS and Android
